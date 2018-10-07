@@ -4,7 +4,10 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -12,35 +15,73 @@
 input[type=number]::-webkit-inner-spin-button {
     opacity: 1
 }
+
+
+
+.plus-minus-input .input-group-button .circle {
+  border-radius: 50%;
+  padding: 0.25em 0.8em;
+}
+
+
+
+
 </style>
 
 </head>
 <body>
 
 
-<table>
-  <tr>
-    <th>User name</th>
-    <th>User surname</th>
-    <th>User number</th>
-  </tr>
-  <tr>
-    <td>Jack</td>
-    <td>The Ripper</td>
-    <td>443322</td>
-  </tr>
-  <tr>
-    <td>Donald</td>
-    <td>Duck</td>
-    <td>7647488</td>
-  </tr>
-</table>
 
 
 
-<div class="container-fluid " style="background-color: lightgrey ;">
-  <h1>Camera Trap</h1>
-  <p>Remote Camera Control</p>
+
+<div class="container-fluid " style="background-color: lightgrey ;   ">
+  <h1></h1>
+  <p></p>
+  
+   <img src="C:\Users\Yvan\OneDrive - Ankara Yıldırım Beyazıt Üniversitesi\exentech\camera trap\user interface\user interface\New folder\gui\CROP.jpg" alt="" border=3 height=200 width=100%></img>
+  <table style="width: 100%; background-color: darkgrey ;">
+    <tr>
+      <th >
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-primary">AFL</button>
+      <button type="button" class="btn btn-primary">AEL</button>
+      <button type="button" class="btn btn-primary">FE-L</button>
+    </div>
+  </div></th>
+      <th style="width:50%;"><!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons--> 
+  <div class=" plus-minus-input">
+    <div class="input-group-button">
+      <button type="button" class="button hollow circle" data-quantity="minus" >
+        <i class="fa fa-minus" aria-hidden="true"></i>
+      </button>
+    </div>
+    <inpu>
+    <div class="input-group-button">
+      <button type="button" class="button hollow circle" data-quantity="plus" >
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  </th>
+  <th>
+    <img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/camera-512.png" alt="" border=3 height=50 width=50></img>
+  </th>
+  <th>
+    <img src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/512/orkut512x512.png" alt="" border=3 height=50 width=50></img>
+  </th>
+  </th>
+  <th>
+  </th>
+    </tr>
+    
+</table > 
+
+
+
+
   <div class="row">
   <div class="col-sm-12">
     <div style="margin:0 0 5px 0">

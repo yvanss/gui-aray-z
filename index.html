@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+</style>
+
+</head>
+<body>
+
+
+
+
+<div class="container-fluid " style="background-color: lightgrey ;">
+  <h1>Camera Trap</h1>
+  <p>Remote Camera Control</p>
+  <div class="row">
+  <div class="col-sm-12">
+    <div style="margin:0 0 5px 0">
+    <b> Drive Mode : </b>
+    <FORM    >
+    <SELECT name="nom" size="1" style="width:100%; background-color: lightgrey ; border-radius: 25px; " >
+    <OPTION>Single Shooting
+    <OPTION>Multple Shooting
+    <OPTION> More
+    </SELECT>
+    </FORM>
+  </OPTION>
+   </div>
+
+  <div  style="margin:0 0 10px 0">
+<b> White Balance </b>
+<FORM>
+<SELECT name="nom" size="1"  style="width:100%; background-color: lightgrey; border-radius: 25px; ">
+<OPTION>Daylight
+<OPTION>Mid-day
+<OPTION>Night
+<OPTION> More
+</SELECT>
+</FORM>
+</div>
+<div class="row">
+  <div class="col-sm-4"> <b > Color Temp: </b>  </div> 
+    <div class="col-sm-4"> <input type="number" value="1" min="1" max="999">  </div>
+      <div class="col-sm-4" style="margin-right:0px"> <button style="margin-right:0px; position: absolute; right: 20px; " type="button"> Default </button> </div>
+  </div>
+
+  <div class="row" >
+    <div  style="margin: 10px 0 0px 0">
+  <div class="col-sm-4"> <b style="margin: 0px 0 0px 0"> Color Filter: </b>  </div> 
+    <div class="col-sm-4"> G-M  <FORM    >
+    <SELECT name="nom" size="1" style="margin-right: 0px ;  width:100%; background-color: lightgrey ; border-radius: 25px; " >
+    <OPTION>0%
+    <OPTION>25%
+    <OPTION>75%
+    <OPTION>100%
+    <OPTION> More
+    </SELECT>
+    </FORM>
+  </OPTION>
+
+    </div>
+      <div class="col-sm-4" style="margin-right:0px; position: absolute; right: 20px;"> A-B:   <FORM    >
+    <SELECT name="nom" size="1" style="width:100%; background-color: lightgrey ; border-radius: 25px; " >
+    <OPTION>0%
+    <OPTION>25%
+    <OPTION>75%
+    <OPTION>100%
+    <OPTION> More
+    </SELECT>
+    </FORM>
+  </OPTION></div>
+  </div>
+</div>
+
+<input type="number" value="1" min="1" max="999"> 
+
+<div class="">
+<b> Picture Effect </b>
+<FORM>
+<SELECT name="nom" size="1" name="nom" size="1"  style="width:100%; background-color: lightgrey; border-radius: 25px; ">
+<OPTION>ON
+<OPTION>OFF
+<OPTION> More
+</SELECT>
+</FORM>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-2">  </div> 
+    <div class="col-sm-5">  </div>
+      <div class="col-sm-5" style="margin-right:0px"> <b>DRO / AUTO HDR </b>  <FORM>
+<SELECT name="nom" size="1" name="nom" size="1"  style="width:100%; background-color: lightgrey; border-radius: 25px; ">
+<OPTION>ON
+<OPTION>OFF
+<OPTION> More
+</SELECT>
+</FORM> </div>
+  </div>
+
+
+<div class="row">
+  <div class="col-sm-2">  </div> 
+    <div class="col-sm-5">  </div>
+      <div class="col-sm-5" style="margin-right:0px"> <b> Quality </b>  <FORM>
+<SELECT name="nom" size="1" name="nom" size="1"  style="width:100%; background-color: lightgrey; border-radius: 25px; ">
+<OPTION>RAW
+<OPTION>LOW
+<OPTION> GOOD
+  <OPTION> MORE
+</SELECT>
+</FORM> </div>
+  </div>
+
+
+  <div class="row">
+  <div class="col-sm-2">  </div> 
+    <div class="col-sm-5">  </div>
+      <div class="col-sm-5" style="margin-right:0px"> <b> Image Size </b>  <FORM>
+<SELECT name="nom" size="1" name="nom" size="1"  style="width:100%; background-color: lightgrey; border-radius: 25px; ">
+<OPTION>Small
+<OPTION>Large
+<OPTION> Full
+  <OPTION> MORE
+</SELECT>
+</FORM> </div>
+  </div>
+
+
+  <div class="row">
+  <div class="col-sm-2">  </div> 
+    <div class="col-sm-5">  </div>
+      <div class="col-sm-5" style="margin-right:0px"> <b> Aspect Ratio </b>  <FORM>
+<SELECT name="nom" size="1" name="nom" size="1"  style="width:100%; background-color: lightgrey; border-radius: 25px; ">
+<OPTION> 4:3
+<OPTION>16:9
+<OPTION> 21:9
+  <OPTION> MORE
+</SELECT>
+</FORM> </div>
+  </div>
+  </div>
+  </div>
+
+
+ <div  style="margin:0 0 10px 0">
+<b> Save in : </b>
+<input type="file" id="FileUpload" onchange="selectFolder(event)" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
+<script type="text/javascript">
+function selectFolder(e) {
+    var theFiles = e.target.files;
+    var relativePath = theFiles[0].webkitRelativePath;
+    var folder = relativePath.split("/");
+    alert(folder[0]);
+}
+</script>
+</div>
+
+
+  </div>
+  </div>
+
+  
+
+</div>
+    
+</body>
+</html>
+
+
+
